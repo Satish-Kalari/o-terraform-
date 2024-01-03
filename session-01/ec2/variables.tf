@@ -10,7 +10,7 @@ variable "sg-description" {
 
 variable "inbound-from-port" {
     #type = string
-    default =  0
+    default =  0 # 0 meaans all ports
 }
 
 variable "cidr_blocks" {

@@ -14,7 +14,7 @@ resource "aws_security_group" "roboshop-all" {#this is terraform name, for terra
 
   ingress {
     description      = "Aloow All Ports"
-    from_port        = var.inbound-from-port # 0 meaans all ports 
+    from_port        = var.inbound-from-port 
     to_port          = 0
     protocol         = "tcp"
     cidr_blocks      = var.cidr_blocks
